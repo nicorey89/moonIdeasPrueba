@@ -7,8 +7,8 @@
 } 
 .main{
     position: relative;
-    width: 100vw;
-    min-height: 100vh;
+    width: 99vw;
+    min-height: 130vh;
     display: flex;
     align-items: center;
     background: url(images/fondo-mobile.png)no-repeat;
@@ -22,24 +22,13 @@ header .navigation{
 header{
     z-index: 999;
     position: fixed;
-    background: rgba(240, 237, 237, 0.5);
-    width: 100%;
-    margin: 25px;
+    background: rgba(240, 237, 237, 0.7);
+    width: 100vw;
+    height: 80px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     transition: 0.5s ease;
-}
-header.sticky{
-  background: #3a6cf4;
-  padding: 10px 200px;
-}
-header .name{
-  color: #fff;
-  font-size: 1.8em;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 .favoritos{
     display: flex;
@@ -54,7 +43,9 @@ header .name{
     margin: 10px;
 }
 .productCard{
-    margin: 20px;
+    margin: 15px;
+    padding: 10px 0 10px 0;
+    border-radius: 10px;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -63,7 +54,7 @@ header .name{
     cursor: pointer;
 }
 .productCard:hover{
-    box-shadow: 0.5px 0.5px 15px grey; 
+    box-shadow: 5px 5px 15px grey; 
 }
 
 .img-product{
@@ -75,6 +66,54 @@ header .name{
     justify-content: space-between;
     align-items: center;
 
+}
+.precio{
+    display: flex;
+}
+h3.old{
+    color:gray;
+    text-decoration:line-through;
+    margin-right: 10px;
+}
+.verMas{
+    position: relative;
+}
+.text-mas{
+    z-index: 999;
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    color: white;
+}
+.ver-mas{
+    text-decoration: underline;
+    cursor: pointer;
+}
+footer{
+    background-color: black;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer h2{
+    color: white;
+}
+footer .email{
+    width: 250px;
+}
+footer .inputs{
+    position: relative;
+}
+footer .inputs .button{
+    position: absolute;
+    z-index: 99;
+    top: 2px;
+    right: 10px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
 }
 @media (min-width: 700px){
     header .navigation{
