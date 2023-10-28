@@ -8,7 +8,7 @@
 .main{
     position: relative;
     width: 99vw;
-    min-height: 130vh;
+    min-height: 120vh;
     display: flex;
     align-items: center;
     background: url(images/fondo-mobile.png)no-repeat;
@@ -17,6 +17,40 @@
 }
 header .navigation{
     display: none;
+}
+.burgerMenu{
+    display: none;
+
+}
+.toogleMenu{
+    z-index: 9999;
+    width: 100%;
+    color:white;
+    background: rgba(240, 237, 237, 0.7);
+    position: absolute;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.burgerMenu ul li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.burgerMenu ul li:hover{
+    background: rgba(240, 237, 237, 0.9);
+}
+.burgerMenu ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 500px;
+    text-decoration: none;
+    color: black;
 }
 
 header{
@@ -51,14 +85,25 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 .productCard:hover{
     box-shadow: 5px 5px 15px grey; 
 }
-
+.imgProductContainer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .img-product{
     width: 90%;
+    cursor: pointer;
+}
+.sale{
+    position: absolute;
+    top: 20px;
+    right: 50px;
 }
 .productDetail{
     width: 90%;
@@ -77,11 +122,16 @@ h3.old{
 }
 .verMas{
     position: relative;
+    width: 99vw;
+    min-height: 60vh;
+    background:url(images/bannerMobile.png)no-repeat;
+    background-size:cover;
+    background-position: center;
 }
 .text-mas{
     z-index: 999;
     position: absolute;
-    top: 250px;
+    top: 200px;
     left: 50px;
     color: white;
 }
@@ -98,24 +148,37 @@ footer{
     align-items: center;
 }
 footer h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
     color: white;
+    margin: 10px;
 }
 footer .email{
     width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
 }
 footer .inputs{
     position: relative;
+    border-radius: 10px;
 }
 footer .inputs .button{
     position: absolute;
     z-index: 99;
-    top: 2px;
+    top: 7px;
     right: 10px;
     border: none;
     background-color: white;
     cursor: pointer;
 }
 @media (min-width: 700px){
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
     header .navigation{
         display: flex;
     }
@@ -132,6 +195,32 @@ footer .inputs .button{
         display: flex;
         align-items: center;
         background: url(images/fondo-menu.png)no-repeat;
+        background-size:cover;
+        background-position: center;
+    }
+    .productsCardContainer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sale{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    .productCard{
+        width: 320px;
+        height: 420px;
+    }
+    .img-product{
+        width: 90%;
+        height: 350px;
+        cursor: pointer;
+    }
+    .verMas{
+        position: relative;
+        width: 99vw;
+        min-height: 60vh;
+        background:url(images/banner.png)no-repeat;
         background-size:cover;
         background-position: center;
     }
