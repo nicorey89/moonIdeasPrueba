@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moon Ideas</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -12,20 +13,36 @@
             <div class="menu-btn"><img src="./images/menu.png" alt=""></div>
             <a href="https://moon-ideas-prueba.vercel.app" class="name"><img src="./images/logo.png" alt=""></a>
             <div class="navigation">
-                <a href=""><h3>SHOP </h3><img src="./images/fecha.png" alt=""></a>
-                <a href=""><h3>NUEVA COLECCIÓN </h3><img src="./images/fecha.png" alt=""></a>
+                <a class="shop-btn"><h3>SHOP </h3><img src="./images/fecha.png" alt=""></a>
+                <a><h3 class="new-btn">NUEVA COLECCIÓN </h3><img src="./images/fecha.png" alt=""></a>
                 <a href=""><h3>ABOUT US</h3></a>
-                <a href=""><h3>CONTACTO</h3></a>
+                <a href="#contact"><h3>CONTACTO</h3></a>
                 <a href=""><img src="./images/Vector.png" alt=""></a>
                 <a href=""><img src="./images/favorrito.png" alt=""></a>
                 <a href=""><img src="./images/carrito.png" alt=""> <img src="./images/(3).png" alt=""></a>
             </div>
+            <div class="shop">
+                <ul>
+                    <a href=""><li>Nueva Colección</li></a>
+                    <a href=""><li>Vestimenta</li></a>
+                    <a href=""><li>Accesorios</li></a>
+                    <a href=""><li>Calzado</li></a>
+                    <a href=""><li>SALE</li></a>
+                </ul>
+            </div>
+            <div class="newColection">
+                <ul>
+                    <a href=""><li>Vestimenta</li></a>
+                    <a href=""><li>Accesorios</li></a>
+                    <a href=""><li>Calzado</li></a>
+                </ul>
+            </div>
             <div class="burgerMenu">
                 <ul>
-                    <li><a href="">shop</a></li>
-                    <li><a href="">nueva coleccion</a></li>
+                    <li><a href="#shop">shop</a></li>
+                    <li><a href="">nueva colección</a></li>
                     <li><a href="">about us</a></li>
-                    <li><a href="">contacto</a></li>
+                    <li><a href="#contact">contacto</a></li>
                 </ul>
             </div>
             <div class="cart-btn"><img src="./images/carrito.png" alt=""> <img src="./images/(3).png" alt=""></div>
@@ -38,7 +55,7 @@
     <main>
         <section class="favoritos">
             <div>
-                <h2 class="titulo">Nuestros favoritos</h2>
+                <h2 class="titulo" id="shop">Nuestros favoritos</h2>
             </div>
             <div class="productsCardContainer">
                 <div class="productCard">
@@ -55,7 +72,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="./images/favorrito.png" alt="">
+                            <i class="fa-regular fa-heart" id="favorite1"></i>
                         </div>
                     </div>
                 </div>
@@ -69,7 +86,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="./images/favorrito.png" alt="">
+                            <i class="fa-regular fa-heart" id="favorite2"></i>
                         </div>
                     </div>
                 </div>
@@ -83,7 +100,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="./images/favorrito.png" alt="">
+                            <i class="fa-regular fa-heart" id="favorite3"></i>
                         </div>
                     </div>
                 </div>
@@ -98,8 +115,10 @@
         </div>
     </section>
     <footer>
-        <h2>suscribete a nuestro newslatter</h2>
-        <div class="inputs">
+        <div class="suscribite">
+            <p>Suscribite a nuestro <em>newslatter</em></p>
+        </div>
+        <div id="contact" class="inputs">
             <input class="email" type="email" placeholder="Email">
             <input class="button" type="button" value="SUSCRIBIRME">
         </div>
