@@ -5,6 +5,9 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 } 
+a{
+    text-decoration: none;
+}
 .main{
     position: relative;
     width: 99vw;
@@ -49,21 +52,40 @@ header .navigation{
     align-items: center;
     height: 50px;
     width: 500px;
-    text-decoration: none;
     color: black;
+}
+.navigation a{
+    margin: 10px;
+    color: black;
+    font-size: small;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation a h3{
+    margin: 5px;
 }
 
 header{
     z-index: 999;
     position: fixed;
     background: rgba(240, 237, 237, 0.7);
-    width: 100vw;
+    width: 95%;
     height: 80px;
+    transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.header{
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    transition: 0.5s ease;
 }
+
 .favoritos{
     display: flex;
     flex-direction: column;
@@ -105,6 +127,10 @@ header{
     top: 20px;
     right: 50px;
 }
+.productCard h2{
+    font-size: medium;
+    font-weight: 200;
+}
 .productDetail{
     width: 90%;
     display: flex;
@@ -137,6 +163,7 @@ h3.old{
 }
 .ver-mas{
     text-decoration: underline;
+    color:white;
     cursor: pointer;
 }
 footer{
@@ -160,6 +187,7 @@ footer .email{
     border-radius: 5px;
     border: none;
     background-color: white;
+    padding: 5px;
 }
 footer .inputs{
     position: relative;
@@ -177,7 +205,8 @@ footer .inputs .button{
 @media (min-width: 700px){
     header{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 0 30px 0 30px;
     }
     header .navigation{
         display: flex;
