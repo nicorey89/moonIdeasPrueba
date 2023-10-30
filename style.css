@@ -13,15 +13,38 @@ body{
 a{
     text-decoration: none;
 }
-.main{
+.slider-frame{
     position: relative;
-    width: 99vw;
-    min-height: 110vh;
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+}
+.slider-frame ul{
     display: flex;
-    align-items: center;
-    background: url(images/fondo-mobile.png)no-repeat;
-    background-size:cover;
-    background-position: center;
+    padding: 0;
+    width: 400%;
+    animation: slide 32s infinite alternate ease-in-out;
+}
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+.slider-frame img{
+    width: 100%;
+}
+@keyframes slide {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+    
 }
 header .navigation{
     display: none;
@@ -223,16 +246,6 @@ footer .inputs .button{
 }
 
 @media (min-width: 740px){
-    .main{
-        position: relative;
-        width: 100vw;
-        min-height: 130vh;
-        display: flex;
-        align-items: center;
-        background: url(images/fondo-menu.png)no-repeat;
-        background-size:cover;
-        background-position: center;
-    }
     .productsCardContainer{
         display: flex;
         flex-wrap: wrap;
