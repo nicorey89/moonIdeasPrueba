@@ -16,7 +16,7 @@ a{
 .slider-frame{
     margin-top: 80px;
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: auto;
     overflow: hidden;
 }
@@ -106,7 +106,7 @@ header{
     z-index: 999;
     position: fixed;
     background: rgba(240, 237, 237, 1);
-    width: 100vw;
+    width: 100%;
     height: 80px;
     transition: 0.5s ease;
     display: flex;
@@ -188,7 +188,7 @@ main{
 }
 .verMas{
     position: relative;
-    width: 99vw;
+    width: 100%;
     min-height: 60vh;
     background:url(images/bannerMobile.png)no-repeat;
     background-size:cover;
@@ -208,7 +208,7 @@ main{
 }
 footer{
     background-color: black;
-    width: 100vw;
+    width: 100%;
     height: 150px;
     display: flex;
     flex-direction: column;
@@ -271,7 +271,7 @@ footer .inputs .button{
     }
     .verMas{
         position: relative;
-        width: 99vw;
+        width: 100%;
         min-height: 60vh;
         background:url(images/banner.png)no-repeat;
         background-size:cover;
@@ -290,7 +290,7 @@ footer .inputs .button{
         margin-top: 0px;
     }
     header{
-        width: 95vw;
+        width: 95%;
         display: flex;
         top: 30px;
         justify-content: space-between;
@@ -353,27 +353,3 @@ footer .inputs .button{
         display: none;
     }
 }
-/* @media (min-width: 1024px){
-    .active-shop{
-        left: 350px;
-    }
-    .active-new{
-        left: 550px;
-    }
-}
-@media (min-width:1224px){
-    .active-shop{
-        left: 550px;
-    }
-    .active-new{
-        left: 750px;
-    }
-}
-@media (max-width:1250px){
-    .active-shop{
-        left: 550px;
-    }
-    .active-new{
-        left: 750px;
-    }
-} */
